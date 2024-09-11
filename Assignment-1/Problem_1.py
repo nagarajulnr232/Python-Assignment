@@ -1,9 +1,9 @@
-# ## Print Your Name: Write a program that prints your name to the console.
+# 1) Print Your Name: Write a program that prints your name to the console.
 #
 # Name=input("Enter your name: ")
 # print(Name)
 #
-# ## Create a program that takes two numbers from the user and prints their sum.
+# 2) Create a program that takes two numbers from the user and prints their sum.
 #
 # x=int(input("Enter num1: "))
 # y=int(input("Enter num2: "))
@@ -29,7 +29,7 @@
 # add_number=sum(49,50)
 # add_number.display()
 #
-# ##Write a program that calculates the area of a rectangle given its length and width.
+# 3)Write a program that calculates the area of a rectangle given its length and width.
 #
 # length=int(input("Enter length of the rectangle: "))
 # width=int(input("Enter width of the rectangle: "))
@@ -57,7 +57,7 @@
 # area=Rectangle(60,80)
 # area.display()
 #
-# ## Write a program that checks whether a number entered by the user is odd or even.
+# 4) Write a program that checks whether a number entered by the user is odd or even.
 #
 # num=int(input("Enter number: "))
 # if num%2== 0:
@@ -65,7 +65,7 @@
 # else:
 #     print("Entered number is Odd")
 
-# ## Implement a program that calculates the factorial of a number using a loop.
+# 5) Implement a program that calculates the factorial of a number using a loop.
 
 # def facorial(number):
 #     res=1
@@ -78,7 +78,7 @@
 # else :
 #     print(f"The factorial {number} is {facorial(number)}.")
 
-# ## Write a program that checks if a given string is a palindrome
+# 6) Write a program that checks if a given string is a palindrome
 
 # def is_palindrome(string):
 #     return string==string[::-1]
@@ -89,4 +89,24 @@
 # else:
 #     print("Not palindrome")
 
+# 7) Create a program that prints the Fibonacci sequence up to `n` terms, where `n` is provided by the user.
 
+# nterms=int(input("Enter a number : "))
+# n1,n2=0,1
+# count=0
+#
+# list1=[]
+# # print(n1)
+# # print(n2)
+# list1.append(n1)
+# list1.append(n2)
+# while (count<nterms):
+#     count = n1 + n2
+#     if count< nterms:
+#         # print(count)
+#         n1=n2
+#         n2=count
+#         list1.append(count)
+# print(list1)
+
+# 8) Write a program that counts the number of vowels in a user-provided string.
