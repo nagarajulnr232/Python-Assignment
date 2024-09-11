@@ -65,4 +65,28 @@
 # else:
 #     print("Entered number is Odd")
 
-print("hello world")
+# ## Implement a program that calculates the factorial of a number using a loop.
+
+# def facorial(number):
+#     res=1
+#     for i in range(1,number+1):
+#         res *= i
+#     return res
+# number = int(input("Enter a number: "))
+# if number < 0:
+#     print("Factorial is not defined for negative number")
+# else :
+#     print(f"The factorial {number} is {facorial(number)}.")
+
+# ## Write a program that checks if a given string is a palindrome
+
+# def is_palindrome(string):
+#     return string==string[::-1]
+# string=input("Enter any word : ")
+# pal=is_palindrome(string)
+# if pal:
+#     print("Is palindrome")
+# else:
+#     print("Not palindrome")
+
+
