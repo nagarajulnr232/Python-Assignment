@@ -29,17 +29,14 @@ FEEDBACK_FILE_PATH = os.path.join(SAVE_DIR, "profile_feedback.xlsx")
 METRICS_FILE_PATH = os.path.join(SAVE_DIR, "feedback_metrics.xlsx")
 LAST_RUN_TIME_FILE = os.path.join(SAVE_DIR, "feedback_metrics.txt")
 # Define allowed senders for profile and feedback emails
-# PROFILE_SENDERS = [
-# "nagaraju.l@lyptus-tech.com",
- # "sandeep.regalla@lyptus-tech.com",
-    # "profile.sender2@example.com"
-# ]
+PROFILE_SENDERS = [
+"nagaraju.l@lyptus-tech.com"
+ ]
 
-# FEEDBACK_SENDERS = [
-#     #   "venkatarramana@lyptus-tech.com",
-#     "sandeep.regalla@lyptus-tech.com",
-# "nagaraju.l@lyptus-tech.com",
-# ]
+FEEDBACK_SENDERS = [
+
+"nagaraju.l@lyptus-tech.com"
+]
 #
 # JOB_IDS = ["AMD_1", "INT_1"]
 # client = ["intel", "amd"]
@@ -152,9 +149,7 @@ def calculate_metrics_and_update(last_metrics_run_time):
                 "Selected Profiles": [selected_profiles],
                 "Rejected Profiles": [rejected_profiles],
                 "Rejection Reasons": [rejection_reasons_str],
-                "Pending": [pending_profiles],
-                # "Client Name": [client],
-                # "Job ID": [job_id]
+                "Pending": [pending_profiles]
             }
 
             # Convert to DataFrame and append to the metrics DataFrame
@@ -492,7 +487,7 @@ def check_emails():
             print(f"{i + 1}. {account.Name}")
 
         # Select the second account (index 1, as it's zero-based)
-        second_account = accounts.Item(3)  # Use 2 for the second account
+        second_account = accounts.Item(1)  # Use 2 for the second account
 
         # Access the inbox folder of the second account
         inbox = second_account.Folders("Inbox")
