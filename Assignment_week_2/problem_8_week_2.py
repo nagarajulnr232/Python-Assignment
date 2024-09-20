@@ -1,15 +1,29 @@
 ## Create a program that calculates the sum of the digits of a number.
 
-def sum_of_digits(number):
-    total = 0
-    while number > 0:
-        digit = number % 10
-        total += digit
-        number //= 10
-    return total
+def getSum(n):
+    sum = 0
+    for digit in str(n):
+        sum += int(digit)
+    return sum
 
-number = int(input("Enter a number: "))
-print("The sum of the digits is:", sum_of_digits(number))
+
+n = int(input("Enter Number: "))
+print(getSum(n))
+
+
+######################################################
+
+def getSum(n):
+    sum = 0
+    while (n != 0):
+        sum = sum + (n % 10)
+        n = n // 10
+
+    return sum
+
+
+n = int(input("Enter Number: "))
+print(getSum(n))
 
 
 
