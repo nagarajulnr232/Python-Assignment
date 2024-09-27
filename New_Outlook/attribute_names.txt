@@ -1,0 +1,6 @@
+FEEDBACK_SENDERS = ["nagaraju.l@lyptus-tech.com"]
+PROFILE_SENDERS = ["eswar.medapati@lyptus-tech.com"]
+JOB_IDS = ["AMD_1", "INT_1","QUAL_1"]
+client = ["intel", "amd"]
+REMINDER_INTERVAL = 5
+COUNTDOWN = 300
